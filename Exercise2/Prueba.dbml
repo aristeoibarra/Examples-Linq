@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CursoLinQ" Class="PruebaDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-C08KUHJ;Initial Catalog=CursoLinQ;Integrated Security=True" SettingsObjectName="Exercise2.Properties.Settings" SettingsPropertyName="CursoLinQConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Empleado" Member="Empleado">
+    <Type Name="Empleado">
+      <Column Name="cve_empleado" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre_empleado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="apepaterno_empleado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="apematerno_empleado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="edad_empleado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Alumno" Member="Alumno">
+    <Type Name="Alumno">
+      <Column Name="cve_alumno" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre_alumno" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="apepaterno_alumno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="apematerno_alumno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="nota1_alumno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nota2_alumno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nota3_alumno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nota4_alumno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cursofavorito_alumno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="nivelacademico_alumno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
